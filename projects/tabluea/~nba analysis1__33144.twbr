@@ -1,0 +1,1233 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='nba 1 (nba 2)' inline='true' name='federated.1v6eqpu0slh1su1buq2ey1hevqm0' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='nba 2' name='excel-direct.0xlmcuq0yb98vh1axm5se081ny8k'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='F:/portal asssess/projects/tabluea/nba 2.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+          <named-connection caption='nba_player_stats_large_sample' name='textscan.1mvtgba1v5mrfw12enwfy0tgzsl9'>
+            <connection class='textscan' cleaning='yes' compat='no' csvFile='F:/portal asssess/projects/tabluea/nba_player_stats_large_sample.csv' dataRefreshTime='' directory='F:/portal asssess/projects/tabluea' filename='C:/Users/Adarsh/AppData/Local/Temp/TableauTemp/0rzfaez1j68ryk1e8z1y91spcq7e/nba_player_stats_large_sample.csv.xlsx' interpretationMode='8' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1mvtgba1v5mrfw12enwfy0tgzsl9' name='nba_player_stats_large_sa.csv' table='[F:\portal asssess\projects\tabluea\nba_player_stats_large_sample#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='Player Name' ordinal='0' />
+            <column datatype='string' name='Team' ordinal='1' />
+            <column datatype='integer' name='Games Played' ordinal='2' />
+            <column datatype='real' name='Points Per Game' ordinal='3' />
+            <column datatype='real' name='Assists Per Game' ordinal='4' />
+            <column datatype='real' name='Rebounds Per Game' ordinal='5' />
+            <column datatype='real' name='Field Goal %' ordinal='6' />
+            <column datatype='real' name='3 Point %' ordinal='7' />
+            <column datatype='real' name='Free Throw %' ordinal='8' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[nba_player_stats_large_sa.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Player Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Player Name]</local-name>
+            <parent-name>[nba_player_stats_large_sa.csv]</parent-name>
+            <remote-alias>Player Name</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[nba_player_stats_large_sa.csv_A1B1F1D0A25649D79B5C10F16492ECA6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Team</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Team]</local-name>
+            <parent-name>[nba_player_stats_large_sa.csv]</parent-name>
+            <remote-alias>Team</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[nba_player_stats_large_sa.csv_A1B1F1D0A25649D79B5C10F16492ECA6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Games Played</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Games Played]</local-name>
+            <parent-name>[nba_player_stats_large_sa.csv]</parent-name>
+            <remote-alias>Games Played</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nba_player_stats_large_sa.csv_A1B1F1D0A25649D79B5C10F16492ECA6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Points Per Game</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Points Per Game]</local-name>
+            <parent-name>[nba_player_stats_large_sa.csv]</parent-name>
+            <remote-alias>Points Per Game</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nba_player_stats_large_sa.csv_A1B1F1D0A25649D79B5C10F16492ECA6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Assists Per Game</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Assists Per Game]</local-name>
+            <parent-name>[nba_player_stats_large_sa.csv]</parent-name>
+            <remote-alias>Assists Per Game</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nba_player_stats_large_sa.csv_A1B1F1D0A25649D79B5C10F16492ECA6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rebounds Per Game</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Rebounds Per Game]</local-name>
+            <parent-name>[nba_player_stats_large_sa.csv]</parent-name>
+            <remote-alias>Rebounds Per Game</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nba_player_stats_large_sa.csv_A1B1F1D0A25649D79B5C10F16492ECA6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Field Goal %</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Field Goal %]</local-name>
+            <parent-name>[nba_player_stats_large_sa.csv]</parent-name>
+            <remote-alias>Field Goal %</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nba_player_stats_large_sa.csv_A1B1F1D0A25649D79B5C10F16492ECA6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>3 Point %</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[3 Point %]</local-name>
+            <parent-name>[nba_player_stats_large_sa.csv]</parent-name>
+            <remote-alias>3 Point %</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nba_player_stats_large_sa.csv_A1B1F1D0A25649D79B5C10F16492ECA6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Free Throw %</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Free Throw %]</local-name>
+            <parent-name>[nba_player_stats_large_sa.csv]</parent-name>
+            <remote-alias>Free Throw %</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[nba_player_stats_large_sa.csv_A1B1F1D0A25649D79B5C10F16492ECA6]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='nba_player_stats_large_sa.csv' datatype='table' name='[__tableau_internal_object_id__].[nba_player_stats_large_sa.csv_A1B1F1D0A25649D79B5C10F16492ECA6]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='nba_player_stats_large_sa.csv' id='nba_player_stats_large_sa.csv_A1B1F1D0A25649D79B5C10F16492ECA6'>
+            <properties context=''>
+              <relation connection='textscan.1mvtgba1v5mrfw12enwfy0tgzsl9' name='nba_player_stats_large_sa.csv' table='[F:\portal asssess\projects\tabluea\nba_player_stats_large_sample#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='Player Name' ordinal='0' />
+                  <column datatype='string' name='Team' ordinal='1' />
+                  <column datatype='integer' name='Games Played' ordinal='2' />
+                  <column datatype='real' name='Points Per Game' ordinal='3' />
+                  <column datatype='real' name='Assists Per Game' ordinal='4' />
+                  <column datatype='real' name='Rebounds Per Game' ordinal='5' />
+                  <column datatype='real' name='Field Goal %' ordinal='6' />
+                  <column datatype='real' name='3 Point %' ordinal='7' />
+                  <column datatype='real' name='Free Throw %' ordinal='8' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='nba_player_stats (nba_player_stats)' inline='true' name='federated.0cporyy1c54say16xoxdp1dzhmrl' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='nba_player_stats' name='excel-direct.0sj9y7c1eb0hg51fh32yn16vjp60'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='F:/portal asssess/projects/tabluea/nba_player_stats.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0sj9y7c1eb0hg51fh32yn16vjp60' name='nba_player_stats' table='[nba_player_stats$]' type='table'>
+          <columns gridOrigin='A1:H51:no:A1:H51:0' header='yes' outcome='6'>
+            <column datatype='string' name='Player Name' ordinal='0' />
+            <column datatype='string' name='Team' ordinal='1' />
+            <column datatype='integer' name='Games Played' ordinal='2' />
+            <column datatype='real' name='Points Per Game' ordinal='3' />
+            <column datatype='real' name='Assists Per Game' ordinal='4' />
+            <column datatype='real' name='Rebounds Per Game' ordinal='5' />
+            <column datatype='real' name='Field Goal %' ordinal='6' />
+            <column datatype='real' name='3 Point %' ordinal='7' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[nba_player_stats]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:H51:no:A1:H51:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Player Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Player Name]</local-name>
+            <parent-name>[nba_player_stats]</parent-name>
+            <remote-alias>Player Name</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[nba!player!stats_0D4271ABE1474E0096A48C66D0147ABC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Team</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Team]</local-name>
+            <parent-name>[nba_player_stats]</parent-name>
+            <remote-alias>Team</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[nba!player!stats_0D4271ABE1474E0096A48C66D0147ABC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Games Played</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Games Played]</local-name>
+            <parent-name>[nba_player_stats]</parent-name>
+            <remote-alias>Games Played</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[nba!player!stats_0D4271ABE1474E0096A48C66D0147ABC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Points Per Game</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Points Per Game]</local-name>
+            <parent-name>[nba_player_stats]</parent-name>
+            <remote-alias>Points Per Game</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[nba!player!stats_0D4271ABE1474E0096A48C66D0147ABC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Assists Per Game</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Assists Per Game]</local-name>
+            <parent-name>[nba_player_stats]</parent-name>
+            <remote-alias>Assists Per Game</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[nba!player!stats_0D4271ABE1474E0096A48C66D0147ABC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rebounds Per Game</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Rebounds Per Game]</local-name>
+            <parent-name>[nba_player_stats]</parent-name>
+            <remote-alias>Rebounds Per Game</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[nba!player!stats_0D4271ABE1474E0096A48C66D0147ABC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Field Goal %</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Field Goal %]</local-name>
+            <parent-name>[nba_player_stats]</parent-name>
+            <remote-alias>Field Goal %</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[nba!player!stats_0D4271ABE1474E0096A48C66D0147ABC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>3 Point %</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[3 Point %]</local-name>
+            <parent-name>[nba_player_stats]</parent-name>
+            <remote-alias>3 Point %</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[nba!player!stats_0D4271ABE1474E0096A48C66D0147ABC]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='None' datatype='integer' name='[3 Point % (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='0' formula='[3 Point %]' peg='0' size='1.06' />
+      </column>
+      <column datatype='real' name='[3 Point %]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Assists Per Game]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Field Goal %]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Games Played]' role='measure' type='quantitative' />
+      <column aggregation='None' datatype='integer' name='[Points Per Game (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='0' formula='[Points Per Game]' peg='0' size='1.64' />
+      </column>
+      <column datatype='real' name='[Points Per Game]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Rebounds Per Game]' role='measure' type='quantitative' />
+      <column caption='nba_player_stats' datatype='table' name='[__tableau_internal_object_id__].[nba!player!stats_0D4271ABE1474E0096A48C66D0147ABC]' role='measure' type='quantitative' />
+      <column-instance column='[__tableau_internal_object_id__].[nba!player!stats_0D4271ABE1474E0096A48C66D0147ABC]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:nba!player!stats_0D4271ABE1474E0096A48C66D0147ABC:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[3 Point %]' derivation='Sum' name='[sum:3 Point %:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Assists Per Game]' derivation='Sum' name='[sum:Assists Per Game:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Field Goal %]' derivation='Sum' name='[sum:Field Goal %:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Games Played]' derivation='Sum' name='[sum:Games Played:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Points Per Game]' derivation='Sum' name='[sum:Points Per Game:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Rebounds Per Game]' derivation='Sum' name='[sum:Rebounds Per Game:qk]' pivot='key' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0cporyy1c54say16xoxdp1dzhmrl].[sum:Games Played:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.0cporyy1c54say16xoxdp1dzhmrl].[sum:3 Point \%:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.0cporyy1c54say16xoxdp1dzhmrl].[sum:Rebounds Per Game:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.0cporyy1c54say16xoxdp1dzhmrl].[sum:Field Goal \%:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0cporyy1c54say16xoxdp1dzhmrl].[sum:Assists Per Game:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.0cporyy1c54say16xoxdp1dzhmrl].[__tableau_internal_object_id__].[cnt:nba!player!stats_0D4271ABE1474E0096A48C66D0147ABC:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0cporyy1c54say16xoxdp1dzhmrl].[sum:Points Per Game:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='nba_player_stats' id='nba!player!stats_0D4271ABE1474E0096A48C66D0147ABC'>
+            <properties context=''>
+              <relation connection='excel-direct.0sj9y7c1eb0hg51fh32yn16vjp60' name='nba_player_stats' table='[nba_player_stats$]' type='table'>
+                <columns gridOrigin='A1:H51:no:A1:H51:0' header='yes' outcome='6'>
+                  <column datatype='string' name='Player Name' ordinal='0' />
+                  <column datatype='string' name='Team' ordinal='1' />
+                  <column datatype='integer' name='Games Played' ordinal='2' />
+                  <column datatype='real' name='Points Per Game' ordinal='3' />
+                  <column datatype='real' name='Assists Per Game' ordinal='4' />
+                  <column datatype='real' name='Rebounds Per Game' ordinal='5' />
+                  <column datatype='real' name='Field Goal %' ordinal='6' />
+                  <column datatype='real' name='3 Point %' ordinal='7' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 10'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='nba_player_stats (nba_player_stats)' name='federated.0cporyy1c54say16xoxdp1dzhmrl' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0cporyy1c54say16xoxdp1dzhmrl'>
+            <column datatype='real' name='[Field Goal %]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Player Name]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Team]' role='dimension' type='nominal' />
+            <column-instance column='[Player Name]' derivation='None' name='[none:Player Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Team]' derivation='None' name='[none:Team:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Field Goal %]' derivation='Sum' name='[sum:Field Goal %:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Shape' />
+            <encodings>
+              <color column='[federated.0cporyy1c54say16xoxdp1dzhmrl].[none:Player Name:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0cporyy1c54say16xoxdp1dzhmrl].[sum:Field Goal %:qk]</rows>
+        <cols>([federated.0cporyy1c54say16xoxdp1dzhmrl].[none:Team:nk] / [federated.0cporyy1c54say16xoxdp1dzhmrl].[none:Player Name:nk])</cols>
+      </table>
+      <simple-id uuid='{20178DD7-DBBD-4C24-887C-D25C46E70820}' />
+    </worksheet>
+    <worksheet name='Sheet 11'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='nba_player_stats (nba_player_stats)' name='federated.0cporyy1c54say16xoxdp1dzhmrl' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0cporyy1c54say16xoxdp1dzhmrl'>
+            <column aggregation='None' datatype='integer' name='[3 Point % (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='0' formula='[3 Point %]' peg='0' size='1.06' />
+            </column>
+            <column datatype='real' name='[3 Point %]' role='measure' type='quantitative' />
+            <column-instance column='[3 Point %]' derivation='Count' name='[cnt:3 Point %:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[3 Point % (bin)]' derivation='None' name='[none:3 Point % (bin):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+          </pane>
+        </panes>
+        <rows>[federated.0cporyy1c54say16xoxdp1dzhmrl].[cnt:3 Point %:qk]</rows>
+        <cols>[federated.0cporyy1c54say16xoxdp1dzhmrl].[none:3 Point % (bin):qk]</cols>
+        <show-full-range>
+          <column>[federated.0cporyy1c54say16xoxdp1dzhmrl].[3 Point % (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{496D1880-FC66-49E2-9767-BBE21E114CB5}' />
+    </worksheet>
+    <worksheet name='Sheet 12'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='nba_player_stats (nba_player_stats)' name='federated.0cporyy1c54say16xoxdp1dzhmrl' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0cporyy1c54say16xoxdp1dzhmrl'>
+            <column aggregation='None' datatype='integer' name='[Points Per Game (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='0' formula='[Points Per Game]' peg='0' size='1.64' />
+            </column>
+            <column datatype='real' name='[Points Per Game]' role='measure' type='quantitative' />
+            <column-instance column='[Points Per Game]' derivation='Count' name='[cnt:Points Per Game:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Points Per Game (bin)]' derivation='None' name='[none:Points Per Game (bin):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+          </pane>
+        </panes>
+        <rows>[federated.0cporyy1c54say16xoxdp1dzhmrl].[cnt:Points Per Game:qk]</rows>
+        <cols>[federated.0cporyy1c54say16xoxdp1dzhmrl].[none:Points Per Game (bin):qk]</cols>
+        <show-full-range>
+          <column>[federated.0cporyy1c54say16xoxdp1dzhmrl].[Points Per Game (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{35BE8610-CB8C-449A-AC3D-1728DC932C5E}' />
+    </worksheet>
+    <worksheet name='Sheet 13'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{184E8AA9-C7B6-456F-A0A3-5CC5AD9725E1}' />
+    </worksheet>
+    <worksheet name='Sheet 14'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{5ED16C61-E87E-471D-AB3D-BF3A90197075}' />
+    </worksheet>
+    <worksheet name='Sheet 15'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{C008E1B1-D00B-4663-AB93-418507E57C28}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='nba_player_stats (nba_player_stats)' name='federated.0cporyy1c54say16xoxdp1dzhmrl' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0cporyy1c54say16xoxdp1dzhmrl'>
+            <column datatype='real' name='[3 Point %]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Player Name]' role='dimension' type='nominal' />
+            <column-instance column='[Player Name]' derivation='None' name='[none:Player Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[3 Point %]' derivation='Sum' name='[sum:3 Point %:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0cporyy1c54say16xoxdp1dzhmrl].[sum:3 Point %:qk]' palette='red_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0cporyy1c54say16xoxdp1dzhmrl].[sum:3 Point %:qk]' />
+              <size column='[federated.0cporyy1c54say16xoxdp1dzhmrl].[sum:3 Point %:qk]' />
+              <lod column='[federated.0cporyy1c54say16xoxdp1dzhmrl].[sum:3 Point %:qk]' />
+              <text column='[federated.0cporyy1c54say16xoxdp1dzhmrl].[none:Player Name:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{357230D4-420D-42F7-9AA4-CEEE4B4E4E61}' />
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='nba_player_stats (nba_player_stats)' name='federated.0cporyy1c54say16xoxdp1dzhmrl' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0cporyy1c54say16xoxdp1dzhmrl'>
+            <column datatype='real' name='[Assists Per Game]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Player Name]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Points Per Game]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Rebounds Per Game]' role='measure' type='quantitative' />
+            <column-instance column='[Player Name]' derivation='None' name='[none:Player Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Assists Per Game]' derivation='Sum' name='[sum:Assists Per Game:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Points Per Game]' derivation='Sum' name='[sum:Points Per Game:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Rebounds Per Game]' derivation='Sum' name='[sum:Rebounds Per Game:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0cporyy1c54say16xoxdp1dzhmrl].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0cporyy1c54say16xoxdp1dzhmrl].[sum:Assists Per Game:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0cporyy1c54say16xoxdp1dzhmrl].[sum:Points Per Game:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0cporyy1c54say16xoxdp1dzhmrl].[sum:Rebounds Per Game:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0cporyy1c54say16xoxdp1dzhmrl].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0cporyy1c54say16xoxdp1dzhmrl].[sum:Assists Per Game:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0cporyy1c54say16xoxdp1dzhmrl].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0cporyy1c54say16xoxdp1dzhmrl].[Multiple Values]</rows>
+        <cols>([federated.0cporyy1c54say16xoxdp1dzhmrl].[none:Player Name:nk] / [federated.0cporyy1c54say16xoxdp1dzhmrl].[:Measure Names])</cols>
+      </table>
+      <simple-id uuid='{E37C8D9C-4581-4656-B2CF-F43020082249}' />
+    </worksheet>
+    <worksheet name='Sheet 6'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='nba_player_stats (nba_player_stats)' name='federated.0cporyy1c54say16xoxdp1dzhmrl' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0cporyy1c54say16xoxdp1dzhmrl'>
+            <column datatype='integer' name='[Games Played]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Player Name]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Points Per Game]' role='measure' type='quantitative' />
+            <column-instance column='[Player Name]' derivation='None' name='[none:Player Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Games Played]' derivation='Sum' name='[sum:Games Played:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Points Per Game]' derivation='Sum' name='[sum:Points Per Game:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='div-level' scope='rows' value='10' />
+            <format attr='div-level' scope='cols' value='10' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.0cporyy1c54say16xoxdp1dzhmrl].[sum:Points Per Game:qk]' />
+            </encodings>
+            <reference-line axis-column='[federated.0cporyy1c54say16xoxdp1dzhmrl].[sum:Games Played:qk]' enable-instant-analytics='true' formula='average' id='refline0' label-type='none' probability='95' scope='per-cell' value-column='[federated.0cporyy1c54say16xoxdp1dzhmrl].[sum:Points Per Game:qk]' z-order='2' />
+            <reference-line axis-column='[federated.0cporyy1c54say16xoxdp1dzhmrl].[sum:Games Played:qk]' enable-instant-analytics='true' fill-above='true' fill-below='true' formula='average' id='refline1' label-type='none' percentage-bands='true' probability='95' scope='per-cell' symmetric='false' value-column='[federated.0cporyy1c54say16xoxdp1dzhmrl].[sum:Points Per Game:qk]' z-order='1'>
+              <reference-line-value percentage='60' />
+              <reference-line-value percentage='80' />
+            </reference-line>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0cporyy1c54say16xoxdp1dzhmrl].[none:Player Name:nk]</rows>
+        <cols>[federated.0cporyy1c54say16xoxdp1dzhmrl].[sum:Games Played:qk]</cols>
+      </table>
+      <simple-id uuid='{D2DEBFF1-665E-4EA2-A901-A6303AC3BA89}' />
+    </worksheet>
+    <worksheet name='Sheet 7'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='nba_player_stats (nba_player_stats)' name='federated.0cporyy1c54say16xoxdp1dzhmrl' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0cporyy1c54say16xoxdp1dzhmrl'>
+            <column datatype='real' name='[3 Point %]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Assists Per Game]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Field Goal %]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Games Played]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Player Name]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Points Per Game]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Rebounds Per Game]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Team]' role='dimension' type='nominal' />
+            <column-instance column='[__tableau_internal_object_id__].[nba!player!stats_0D4271ABE1474E0096A48C66D0147ABC]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:nba!player!stats_0D4271ABE1474E0096A48C66D0147ABC:qk]' pivot='key' type='quantitative' />
+            <column caption='nba_player_stats' datatype='table' name='[__tableau_internal_object_id__].[nba!player!stats_0D4271ABE1474E0096A48C66D0147ABC]' role='measure' type='quantitative' />
+            <column-instance column='[Player Name]' derivation='None' name='[none:Player Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Team]' derivation='None' name='[none:Team:nk]' pivot='key' type='nominal' />
+            <column-instance column='[3 Point %]' derivation='Sum' name='[sum:3 Point %:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Assists Per Game]' derivation='Sum' name='[sum:Assists Per Game:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Field Goal %]' derivation='Sum' name='[sum:Field Goal %:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Games Played]' derivation='Sum' name='[sum:Games Played:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Points Per Game]' derivation='Sum' name='[sum:Points Per Game:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Rebounds Per Game]' derivation='Sum' name='[sum:Rebounds Per Game:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0cporyy1c54say16xoxdp1dzhmrl].[:Measure Names]'>
+            <groupfilter function='level-members' level='[:Measure Names]' />
+          </filter>
+          <slices>
+            <column>[federated.0cporyy1c54say16xoxdp1dzhmrl].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0cporyy1c54say16xoxdp1dzhmrl].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0cporyy1c54say16xoxdp1dzhmrl].[Multiple Values]</rows>
+        <cols>([federated.0cporyy1c54say16xoxdp1dzhmrl].[none:Team:nk] / ([federated.0cporyy1c54say16xoxdp1dzhmrl].[none:Player Name:nk] / [federated.0cporyy1c54say16xoxdp1dzhmrl].[:Measure Names]))</cols>
+      </table>
+      <simple-id uuid='{67F2ACEE-B2F8-4D31-9896-DBB37559FAE5}' />
+    </worksheet>
+    <worksheet name='Sheet 8'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='nba_player_stats (nba_player_stats)' name='federated.0cporyy1c54say16xoxdp1dzhmrl' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0cporyy1c54say16xoxdp1dzhmrl'>
+            <column datatype='real' name='[3 Point %]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Team]' role='dimension' type='nominal' />
+            <column-instance column='[Team]' derivation='None' name='[none:Team:nk]' pivot='key' type='nominal' />
+            <column-instance column='[3 Point %]' derivation='Sum' name='[sum:3 Point %:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.0cporyy1c54say16xoxdp1dzhmrl].[none:Team:nk]' />
+              <text column='[federated.0cporyy1c54say16xoxdp1dzhmrl].[none:Team:nk]' />
+              <text column='[federated.0cporyy1c54say16xoxdp1dzhmrl].[sum:3 Point %:qk]' />
+              <lod column='[federated.0cporyy1c54say16xoxdp1dzhmrl].[sum:3 Point %:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{A6DDD1F3-CDC3-4E27-AFA1-3860E581AD80}' />
+    </worksheet>
+    <worksheet name='Sheet 9'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='nba_player_stats (nba_player_stats)' name='federated.0cporyy1c54say16xoxdp1dzhmrl' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0cporyy1c54say16xoxdp1dzhmrl'>
+            <column datatype='real' name='[Rebounds Per Game]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Team]' role='dimension' type='nominal' />
+            <column-instance column='[Team]' derivation='None' name='[none:Team:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Rebounds Per Game]' derivation='Sum' name='[sum:Rebounds Per Game:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.0cporyy1c54say16xoxdp1dzhmrl].[sum:Rebounds Per Game:qk]' />
+              <text column='[federated.0cporyy1c54say16xoxdp1dzhmrl].[none:Team:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{07309335-C6E9-40B2-869C-5AA7842ADB09}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones />
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='1' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{0EB4B26E-2735-4FB1-8F3D-F1A6A83BF252}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='63'>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0cporyy1c54say16xoxdp1dzhmrl].[sum:3 Point %:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{794365FD-0692-4AA7-8C85-EE7147778CA5}' />
+    </window>
+    <window class='worksheet' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0cporyy1c54say16xoxdp1dzhmrl].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E582D6CE-A53D-4C1E-AE22-D381DDF38D5C}' />
+    </window>
+    <window class='worksheet' name='Sheet 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BF4FC3D3-6030-41D4-BA43-77CB46FA592B}' />
+    </window>
+    <window class='worksheet' name='Sheet 7'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0cporyy1c54say16xoxdp1dzhmrl].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{198CB420-9BAF-44CE-8311-8D311B83890B}' />
+    </window>
+    <window class='worksheet' name='Sheet 8'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0cporyy1c54say16xoxdp1dzhmrl].[none:Team:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <floating-toolbar-visibility value='1' />
+        <default-map-tool-selection tool='4' />
+      </viewpoint>
+      <simple-id uuid='{205310B4-2FEC-4DF7-9C1E-E26F57010C2A}' />
+    </window>
+    <window class='worksheet' name='Sheet 9'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5E1653FC-7477-4167-8D21-C5FDA19D7B0D}' />
+    </window>
+    <window class='worksheet' name='Sheet 10'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0cporyy1c54say16xoxdp1dzhmrl].[none:Player Name:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{489F364A-B24C-4AA1-A214-C2B722BB6EEF}' />
+    </window>
+    <window class='worksheet' name='Sheet 11'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D0689A47-BC95-4CEF-B8C2-A6273E080223}' />
+    </window>
+    <window class='worksheet' name='Sheet 12'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{70438842-3FA3-4BBD-A659-EFC30F8FE738}' />
+    </window>
+    <window class='worksheet' name='Sheet 13'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{238880FF-C62F-4A52-B96B-42B61691C14A}' />
+    </window>
+    <window class='worksheet' name='Sheet 14'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C2C38CE9-A686-4D6A-971B-9807FE2D726F}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 15'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5B5A74A5-71DB-4CD0-9AAA-057DB56BDBC3}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{F4B5CE16-59E3-4CBE-B189-3800C3E497A0}' />
+    </window>
+  </windows>
+</workbook>
